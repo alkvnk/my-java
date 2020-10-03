@@ -1,6 +1,6 @@
 version: '3'
 services:
-  srv1:
+  srv2:
     build:
       context: ./
       dockerfile: Dockerfile
