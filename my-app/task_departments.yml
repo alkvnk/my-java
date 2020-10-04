@@ -1,0 +1,134 @@
+---
+Dream:
+  Departments:
+    Dep_1:
+      staff members:
+        member1:
+          name: Olga
+          age: 
+          position: Accountant
+          salary: 5500
+        member2:
+          name: Olga
+          age:
+          position: Accountant
+          salary: 5300
+        member3:
+          name: Olga
+          age:
+          position: Accountant
+          salary: 5300
+        member4:
+          name: Olga
+          age:
+          position: Accountant
+          salary: 5300
+        member5:
+          name: Dmitry
+          age:
+          position: 
+          salary: 5400
+        member6:
+          name: Dmitry
+          age:
+          position: 
+          salary: 5100
+        member7:
+          name: Dmitry
+          age:
+          position: 
+          salary: 6000
+        member8:
+          name: Ivan
+          age:
+          position:
+          salary: 5790
+        member9:
+          name: Ivan
+          age:
+          position:
+          salary: 5678           
+    Dep_2:
+      staff members:
+        member1:
+          name: Roman
+          age: 24
+          position: lawyer
+          salary: 3000
+        member2:
+          name: Roman
+          age: 24
+          position: lawyer
+          salary: 3000
+        member3:
+          name: Roman
+          age: 21
+          position: lawyer
+          salary: 3000
+        member4:
+          name: Roman
+          age: 25
+          position: lawyer
+          salary: 3000
+        member5:
+          name: Maxim
+          age: 23
+          position: Driver
+          salary: 800
+        member6:
+          name: Maxim
+          age: 24
+          position: Driver
+          salary: 800
+    Dep_3:
+      staff members:
+        member1:
+          name: Ivan
+          age: 
+          position: constructor
+          salary: 2300
+        member2:
+          name: Nikolay
+          age: 
+          position: constructor
+          salary: 2300
+        member3:
+          name: Olga
+          age: 
+          position: lawyer
+          salary: 2600
+    Dep_4&5:
+      staff members:
+        member1:
+          depid: 4
+          name: Yuliya
+          age: 31
+          position: Documents
+          salary: 4500
+        member2:
+          depid: 5
+          name: Yuliya
+          age: 32
+          position: Documents
+          salary: 4600
+        member3:
+          depid: 4
+          name: Sergey
+          age: 65
+          position: 
+          salary: 4600
+        member4:
+          depid: 4
+          name: Ivan
+          age: 67
+          position: 
+          salary: 4800
+    Dep_6:
+      staff members:
+        member4:
+          name: Igor
+          middlename: Viktorovich
+          age: 58
+          position: security director
+          salary: 3900
+...            
