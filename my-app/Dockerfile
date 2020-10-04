@@ -1,3 +1,4 @@
+## test # FROM openjdk:8-jre-alpine3.9
 FROM java:8
 FROM maven:alpine
 COPY pom.xml /usr/local/service/pom.xml
