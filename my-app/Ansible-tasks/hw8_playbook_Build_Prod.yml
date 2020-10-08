@@ -1,0 +1,51 @@
+---
+- name: Build srv; environment for maven java project
+  hosts: build
+  become: yes
+
+  tasks: 
+  - name: install default-jdk
+    apt:
+      name: default-jdk
+      state: present
+
+  - name: install maven 
+    apt:
+      name: maven
+      state: present
+
+  - name: install git 
+    apt:
+      name: git
+      state: present
+
+  - nama: exec git pull
+    git: 
+      repo: git@github.com:alkvnk/my-java.git
+      dest: /home/alevan/
+      update: yes
+      version: master
+
+  - name: maven package  
+    shell:  
+    cmd: mvn package -f /home/alevan/my-java/pom.xml
+
+- name: Production server
+  hosts: prod
+  become: yes
+
+  tasks: 
+  - name: install default-jdk
+    apt:
+      name: default-jdk
+      state: present
+
+  - name: install maven 
+    apt:
+      name: maven
+      state: present
+
+  - name: copy file to production server
+    synchronize:
+      src: /home/alevan/my-java/target/my-app-1.0-SNAPSHOT.jar
+      dest: /home/alevan/my-app-1.0-SNAPSHOT.jar
